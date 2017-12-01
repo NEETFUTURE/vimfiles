@@ -68,7 +68,11 @@ inoremap <C-k> <C-o>D
 
 " Misc {{{
 
+" buffer
 set hidden
+" visualbell
+set visualbell t_vb=
+set noerrorbells
 
 " Appearance
 set background=dark
