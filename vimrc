@@ -46,7 +46,8 @@ set number
 inoremap jj <ESC>
 " Clear highlight
 nnoremap <ESC><ESC> :noh<CR>
-"
+" Exchange : ;
+nnoremap ; :
 
 " Emacs-like keybind
 cnoremap <C-a> <Home>
