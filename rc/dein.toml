@@ -21,8 +21,8 @@ call denite#custom#map('insert', '<C-p>', '<denite:move_to_previous_line>', 'nor
 call denite#custom#map('insert', '<C-j>', '<denite:do_action:split>', 'noremap')
 call denite#custom#map('insert', '<C-k>', '<denite:do_action:vsplit>', 'noremap')
 " C-Cでカレントディレクトリ変更
-call denite#custom#map('insert', '<C-c>', '<denite:do_action:cd>', 'noremap')
-call denite#custom#map('normal', '<C-c>', '<denite:do_action:cd>', 'noremap')
+call denite#custom#map('insert', '<C-o>', '<denite:do_action:cd>', 'noremap')
+call denite#custom#map('normal', '<C-o>', '<denite:do_action:cd>', 'noremap')
 
 " 以下はdenite起動時に使用するキーマップ
 " バッファ一覧
@@ -30,7 +30,7 @@ noremap <C-P> :Denite buffer<CR>
 " ファイル一覧
 noremap <C-N> :Denite -buffer-name=file file<CR>
 " 最近使ったファイルの一覧
-noremap <C-Z> :Denite file_old<CR>
+noremap <C-Z> :Denite file_mru<CR>
 " カレントディレクトリ
 noremap <C-C> :Denite file_rec<CR>
 " バッファ一覧
