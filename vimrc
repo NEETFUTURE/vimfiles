@@ -89,7 +89,7 @@ set wrap
 set relativenumber
 " lightline
 set laststatus=2
-
+set foldmethod=marker
 
 " Indent
 set autoindent
